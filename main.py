@@ -18,10 +18,10 @@ def inputControl():
     text = encDictionary["text"]
 
     if masterkey.strip() == "":
-        tkinter.messagebox.showerror("Empty Value", "Masterkey should not be empty.")
+        tkinter.messagebox.showinfo("Empty Value", "Masterkey should not be empty.")
         return False
     elif text.strip() == "":
-        tkinter.messagebox.showerror("Empty Value", "Text should not be empty.")
+        tkinter.messagebox.showinfo("Empty Value", "Text should not be empty.")
         return False
     else:
         return True
